@@ -1,0 +1,138 @@
+ Q1. What are conditional statements? Explain conditional statements with
+  syntax and examples.
+ ans.  The conditional statements is a programing that can be execute in the different
+ block of code. they allow to program to behave accordingly to the code.
+
+ if statement 
+ x = 10;
+ if(x > 5) {
+    console.log(" x is greater than 5")
+ };
+output: x is greater than 5.
+
+if else statements :
+x = 10;
+if(x > 5) {
+    console.log("x is greater than 5")
+} else {
+    console.log("x is less than 5")
+};
+output : x is greater than 5
+
+
+if else if else statement :
+x = 5
+if(x > 10){
+    console.log("x is greater than 10")
+} else if(x == 10) {
+    console.log("x is equal to 10")
+} else{
+    console.log("x is less than 10")
+};
+output: x is less than 10;
+
+if else nested statement :
+x = 5;
+y = 5;
+if(x >= 4){
+    console.log("x is greater than 4")
+    if(y == 5){
+        console.log(" y is equal to 5")
+    }
+}else {
+    console.log("x is less than 4")
+};
+output: x is greater than 5 or y is equal to 5.
+
+conditional operator;
+> (greater than)
+< (less than)
+= (equal to)
+<= (less than and equal to)
+>= (greater than and equal to)
+!= (not equal to )
+their are conditional opearator to apply in condition how to perform.
+
+ Q3. What are loops, and what do we need them? Explain different types of loops 
+ with their syntax and examples.
+ans. the loops are the programing, we use that type of code that excute in a block 
+of scope till the code finised or in a specific number of time.
+syntex of loops,
+for loops:
+for (intiatial; condition; increment/decrement){
+ code to be executed
+}  
+
+e.g. for loops
+for(i = 0;i < 5; i++){
+    console.log(i)
+};
+output: 0,1,2,3,4
+
+while loops:
+
+i = 0;
+while(i < 5){
+    console.log(i);
+     i++;
+}
+output: 0,1,2,3,4
+
+do while loop :
+i = 0;
+do{
+console.log(i);
+i++;
+}while(i < 5);
+output: 0,1,2,3,4;
+
+break and continue statement:
+
+for(i = 0;i < 5;i++){
+    if(i===3){
+        break;// break the loop when is up to 3.
+    }
+    console.log(i);
+};
+
+for(i = 0;i < 5;i++){
+    if(i===3){
+        continue;// swipe the 3 and then continue,
+    }
+    console.log(i);
+};
+
+
+
+ Q4. Generate numbers between any 2 given numbers.
+ Ex
+ const num1 = 10
+ const num2 = 25;
+ Output: 11, 12, 13, …., 25
+ ans.   
+ 
+gerenrate number between 10 to 25;
+using for loop :
+
+
+ for(num = 11; num < 26; num++){
+    console.log(num)
+ }
+
+
+Q5. Use the while loop to print numbers from 1 to 25 in ascending and descending order.
+ ans.
+  Using while loop to print numbers 
+  from 1 to 25 in ascending and descending order.
+
+i = 1;
+  while(i <= 25){
+    console.log(i);
+    i++;
+  }
+  
+  i = 25;
+  while(i >= 1){
+    console.log(i);
+   i--;
+  }
